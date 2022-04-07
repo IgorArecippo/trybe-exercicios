@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[IgorArecippo](https://www.linkedin.com/in/igor-arecippo-32b903168/)_ enquanto estudava na [Trybe](https://www.betrybe.com/)
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Igor Arecippo](https://www.linkedin.com/in/igor-arecippo-32b903168/) enquanto estudava na [Trybe](https://www.betrybe.com/)
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
