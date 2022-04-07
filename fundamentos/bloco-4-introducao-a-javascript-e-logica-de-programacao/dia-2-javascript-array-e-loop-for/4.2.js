@@ -5,3 +5,8 @@ for(let i = 0; i < numbers.length; i += 1){
 }*/
 
 //2
+let soma = 0
+for(let i =0; i < numbers.length; i += 1){
+    soma += numbers[1];
+}
+console.log(soma)
