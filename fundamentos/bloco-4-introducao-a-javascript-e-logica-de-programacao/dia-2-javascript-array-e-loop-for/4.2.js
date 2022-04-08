@@ -1,5 +1,5 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
- /*1:
+ /*let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+1:
 for(let i = 0; i < numbers.length; i += 1){
 
 2
@@ -31,7 +31,7 @@ for(let i = 0; i < numbers.length; i += 1){
 };
 console.log(maiorNumero);
 
-6*/
+6
 let valoresImpares = 0;
 
 for( let i = 0; i < numbers.length; i += 1){
@@ -44,3 +44,24 @@ if (valoresImpares === 0){
 } else {
     console.log (valoresImpares)
 }
+
+7
+let menorNumero = 0 
+for (let i = 0; i < numbers.length; i += 1){
+    if (numbers[i] < menorNumero){
+        menorNumero = numbers[i];
+    }
+}
+console.log(menorNumero);
+
+8
+let resultado = [];
+for (let i = 1; i <= 25; i += 1){
+    resultado.push(i);
+}
+console.log(resultado);
+
+9
+for(let i = 0; i < resultado.length; i += 1){
+    console.log(resultado[i] / 2);
+};*/
