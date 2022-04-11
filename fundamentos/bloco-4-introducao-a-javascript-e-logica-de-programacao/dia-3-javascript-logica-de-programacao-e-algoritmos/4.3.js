@@ -33,5 +33,17 @@ for (let i = 0; i < array.length; i += 1) {
  console.log(maiorPalavra);
  console.log(menorPalavra);
 
- 4*/
- 
+ 4
+let maiorPrimo = 0;
+for (let currentNumber = 0; currentNumber <= 50; currentNumber += 1) {
+    let isPrime = true;
+    for (currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
+        if (currentNumber % currentDivisor === 0) {
+            isPrime = false;
+        }
+    }
+    if (isPrime) {
+        maiorPrimo = currentNumber;
+    }
+}
+console.log(maiorPrimo);*/
