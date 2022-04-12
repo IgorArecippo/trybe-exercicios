@@ -78,3 +78,12 @@ console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros fav
 PARTE II
 
 1*/
+function verificaPalindrome(string) {
+    let reverse = string.split('').reverse().join('');
+    if (reverse === string) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  console.log(verificaPalindrome('igor'));
