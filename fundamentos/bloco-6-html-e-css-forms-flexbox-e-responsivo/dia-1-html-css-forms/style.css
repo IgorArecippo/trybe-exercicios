@@ -1,0 +1,34 @@
+* {
+    /* CSS Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+
+  body{
+    background-color: lightgray;
+  }
+
+  header {
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
+  }
+
+  fieldset {
+      border: 2px solid black;
+      background-color: whitesmoke;
+      padding: 20px;
+      margin: 40px auto;
+      width: 80%;
+      border-radius: 1%;
+  }
+
+  #btns {
+      text-align: center;
+  }
+
+  button {
+      padding: 5px;
+  }

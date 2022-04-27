@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trybe Trip</title>
+</head>
+<body>
+    <header>
+        <h1>TRYBE TRIPS</h1>
+    </header>
+    
+    <form>
+        <fieldset class='trip-form' action="" method="get">
+            <label for = 'full-name'>Nome:</label>
+            <input type="text" name="full-name" id="full-name" placeholder="Digite seu nome completo" maxlength="40" minlength="10" required>
+            <br>
+            <br>
+            
+            <label for = 'email'>Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" maxlength="50"   minlength="10" required>
+
+
+            <br>
+            <br>
+            <label for="destination1">Cidade</label>
+            <input type="radio" id="destination1" className="radios" name="destinations" value="Cidade" required>
+            <label for="destination2">Campo</label>
+            <input type="radio" id="destination2" className="radios" name="destinations" value="Campo" required>
+            <label for="destination3">Praia</label>
+            <input type="radio" id="destination3" className="radios" name="destinations" value="Praia" required>
+            <label for="destination4">Montanhas</label>
+            <input type="radio" id="destination4" className="radios" name="destinations" value="Montanhas" required>
+            <br>
+            <br>
+
+            <label for="why">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso TrybeTrip? </label>
+            <br>
+            <textarea name="why" id="why" cols="60" rows="10" placeholder='Digite sua resposta vencedora aqui'></textarea>
+            <br>
+            <br>
+
+            <label for="date">Qual a melhor data pra realizar sua viagem?</label>
+            <input type="date" id="date">
+            <br>
+            <br>
+
+            <label for="promo">Gostaria de receber outras oportunidades oferecidas?</label>
+            <input type="checkbox" name="promo" id="promo">
+            <br>
+            <br>
+            <label for="agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de cconcursos futuros.</label>
+            <input type="checkbox" id='agreement' required>
+
+        </fieldset>
+            <div id="btns">
+                <button type="submit" id="submit-btn">Participar!</button>
+                <button type="button" id="clear-btn">Apagar informações</button>
+            </div>
+    </form>
+
+   <script src="./script.js"></script>
+</body>
+</html>
