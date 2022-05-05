@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+  @media screen and (max-width: 500px) {
+      body {
+          display: flex;
+          background-color: antiquewhite;
+          margin-left: 20px;
+          margin-right: 20px;
+      }
+      header p {
+          display: flex;
+          justify-content: center;
+          font-size: 1.7em;
+      }
+      nav ul {
+          display: flex;
+          list-style: none;
+          justify-content: space-evenly;
+          font-size: 1.3em;
+
+      }
+  }
