@@ -101,7 +101,7 @@ if (notaValida) {
     console.log('ERRO')
 };
 
-8*/
+8
 const x = 1;
 const y = 9;
 const z = 5;
@@ -112,3 +112,13 @@ if (temPar === true) {
     console.log('false')
 };
 
+9*/
+const x = 2;
+const y = 6;
+const z = 4;
+const temImpar = x % 2 !== 0 || y % 2 !== 0 || z % 2 !== 0;
+if (temImpar === true) {
+    console.log ('true')
+} else {
+    console.log('false')
+};
