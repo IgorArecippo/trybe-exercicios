@@ -79,7 +79,7 @@ switch (peça.toLowerCase()){
         break;
     default: console.log('Erro: peça inválida');
 }
-*/
+
 7
 const nota = 93;
 const notaValida = nota >= 0 && nota <= 100;
@@ -99,5 +99,16 @@ if (notaValida) {
     }
 } else {
     console.log('ERRO')
-}
+};
+
+8*/
+const x = 1;
+const y = 9;
+const z = 5;
+const temPar = x % 2 === 0 || y % 2 === 0 || z % 2 === 0;
+if (temPar === true) {
+    console.log ('true')
+} else {
+    console.log('false')
+};
 
