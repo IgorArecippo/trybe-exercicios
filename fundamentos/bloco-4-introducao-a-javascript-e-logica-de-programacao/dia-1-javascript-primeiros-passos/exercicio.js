@@ -78,4 +78,26 @@ switch (peça.toLowerCase()){
     case 'peão': console.log('Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas');
         break;
     default: console.log('Erro: peça inválida');
-}*/
+}
+*/
+7
+const nota = 93;
+const notaValida = nota >= 0 && nota <= 100;
+if (notaValida) {
+    if (nota >= 90) {
+        console.log('conceito A');
+    } else if (nota >= 80) {
+        console.log('conceito B');
+    } else if (nota >= 70) {
+        console.log('conceito C');
+    } else if (nota >= 60) {
+        console.log('conceito D');
+    }    else if (nota >= 50) {
+        console.log('conceito E');
+    } else if (nota < 50) {
+        console.log('conceito F');
+    }
+} else {
+    console.log('ERRO')
+}
+
