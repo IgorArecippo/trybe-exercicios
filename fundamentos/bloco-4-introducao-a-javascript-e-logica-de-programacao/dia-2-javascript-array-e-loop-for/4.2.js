@@ -1,11 +1,15 @@
- /*let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-1:
-for(let i = 0; i < numbers.length; i += 1){
+/*
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+1
+for (let index = 0; index < numbers.length; index += 1){
+    console.log(numbers[index])
+}
 
 2
 let soma = 0;
-for(let i =0; i < numbers.length; i += 1){
-    soma += numbers[1];
+for(let i = 0; i < numbers.length; i += 1){
+    soma += numbers[i];
 };
 console.log(soma);
 
@@ -15,6 +19,7 @@ for(let i = 0; i < numbers.length; i += 1){
     soma += numbers[i];
 };
 let media = soma / numbers.length;
+console.log(media);
 
 if(media > 20){
     console.log('valor maior que 20');
@@ -46,7 +51,7 @@ if (valoresImpares === 0){
 }
 
 7
-let menorNumero = 0 
+let menorNumero = 1000 
 for (let i = 0; i < numbers.length; i += 1){
     if (numbers[i] < menorNumero){
         menorNumero = numbers[i];
@@ -64,4 +69,5 @@ console.log(resultado);
 9
 for(let i = 0; i < resultado.length; i += 1){
     console.log(resultado[i] / 2);
-};*/
+};
+*/
