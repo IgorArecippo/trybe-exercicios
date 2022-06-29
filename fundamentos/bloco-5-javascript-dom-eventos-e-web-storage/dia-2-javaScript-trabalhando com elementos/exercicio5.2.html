@@ -62,6 +62,7 @@
       const elementH1 = document.createElement('h1');
       elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(elementH1);
+      //por quê aqui precisa do docment. e nos outros não?
 
       //2
       const elementMain = document.createElement('elementMain');
@@ -72,6 +73,17 @@
       const elementSectionCenter = document.createElement('section');
      elementSectionCenter.className = 'center-content';
      elementMain.appendChild(elementSectionCenter);
+
+     //4 
+     const paragraph = document.createElement('p');
+     elementSectionCenter.appendChild(paragraph);
+     paragraph.innerHTML = 'filhinho de papai';
+     //por quê o gabarito esta com innerHTML e nao innerText?
+
+     //5
+     const elementSectionLeft = document.createElement('section');
+     elementSectionLeft.className = 'left-content';
+     elementMain.appendChild(elementSectionLeft);
 
     </script>
   </body>
