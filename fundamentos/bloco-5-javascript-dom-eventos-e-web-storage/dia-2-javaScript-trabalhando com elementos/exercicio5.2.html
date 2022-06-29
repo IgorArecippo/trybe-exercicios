@@ -1,0 +1,140 @@
+<!-- arquivo index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .elementMain-content {
+        background-color: yellow;
+      }
+
+      .elementMain-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .elementMain-content .center-content p {
+        font-style: italic;
+      }
+
+      .elementMain-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .elementMain-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .elementMain-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .elementMain-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 1
+      const elementH1 = document.createElement('h1');
+      elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(elementH1);
+
+      //2
+      const elementMain = document.createElement('elementMain');
+      elementMain.className = 'main-content';
+      document.body.appendChild(elementMain);
+
+      //3
+      const elementSectionCenter = document.createElement('section');
+     elementSectionCenter.className = 'center-content';
+     elementMain.appendChild(elementSectionCenter);
+
+    </script>
+  </body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .elementMain-content {
+        background-color: yellow;
+      }
+
+      .elementMain-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .elementMain-content .center-content p {
+        font-style: italic;
+      }
+
+      .elementMain-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .elementMain-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .elementMain-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .elementMain-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+    </script>
+  </body>
+</html>
