@@ -15,43 +15,43 @@
         text-align: center;
       }
 
-      .main-content {
+      .elementMain-content {
         background-color: yellow;
       }
 
-      .main-content .center-content {
+      .elementMain-content .center-content {
         background-color: red;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
       }
 
-      .main-content .center-content p {
+      .elementMain-content .center-content p {
         font-style: italic;
       }
 
-      .main-content .left-content {
+      .elementMain-content .left-content {
         background-color: green;
         width: 60%;
         margin-left: 0;
         margin-right: auto;
       }
 
-      .main-content .left-content .small-image {
+      .elementMain-content .left-content .small-image {
         display: block;
         margin-left: auto;
         margin-right: auto;
         border-radius: 100%;
       }
 
-      .main-content .right-content {
+      .elementMain-content .right-content {
         background-color: blue;
         width: 60%;
         margin-left: auto;
         margin-right: 0;
       }
 
-      .main-content .description {
+      .elementMain-content .description {
         text-align: center;
       }
     </style>
@@ -64,7 +64,9 @@
       document.body.appendChild(elementH1);
 
       //2
-      
+      const elementMain = document.createElement('elementMain');
+      elementMain.className = 'main-content';
+      document.body.appendChild(elementMain);
 
     </script>
   </body>
@@ -84,43 +86,43 @@
         text-align: center;
       }
 
-      .main-content {
+      .elementMain-content {
         background-color: yellow;
       }
 
-      .main-content .center-content {
+      .elementMain-content .center-content {
         background-color: red;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
       }
 
-      .main-content .center-content p {
+      .elementMain-content .center-content p {
         font-style: italic;
       }
 
-      .main-content .left-content {
+      .elementMain-content .left-content {
         background-color: green;
         width: 60%;
         margin-left: 0;
         margin-right: auto;
       }
 
-      .main-content .left-content .small-image {
+      .elementMain-content .left-content .small-image {
         display: block;
         margin-left: auto;
         margin-right: auto;
         border-radius: 100%;
       }
 
-      .main-content .right-content {
+      .elementMain-content .right-content {
         background-color: blue;
         width: 60%;
         margin-left: auto;
         margin-right: 0;
       }
 
-      .main-content .description {
+      .elementMain-content .description {
         text-align: center;
       }
     </style>
