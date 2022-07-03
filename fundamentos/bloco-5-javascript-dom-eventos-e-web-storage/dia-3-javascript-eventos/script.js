@@ -109,3 +109,22 @@ function modifyFriday(fridayArray){
 }
 let decemberFridays = [4, 11, 18, 25];
 modifyFriday(decemberFridays);
+
+//6
+function lupaOver(){
+    let days = document.getElementById('days');
+    days.addEventListener('mouseover', function(event){
+        event.target.style.fontSize = '30px';
+        event.targer.style.fontWeight = '600';
+    });
+}
+
+function lupaOut(){
+    let days = document.getElementById('days');
+    days.addEventListener('mouseout', function(event){
+        event.target.style.fontSize = '20px';
+        event.targer.style.fontWeight = '200';
+    });
+}
+lupaOut();
+lupaOver();
