@@ -90,3 +90,22 @@ function createfridayButton(buttonName){
     buttonContainer.appendChild(newButton);
 }
 createfridayButton('Sexta-feira');
+
+//5
+function modifyFriday(fridayArray){
+    let getFridayButton = document.querySelector('#btn-friday');
+    let fridays = document.getElementsByClassName('friday');
+    let newFriday = 'SEXTA-CHEIRA';
+
+    getFridayButton.addEventListener('click', function(){
+        for (index in fridays){
+            if (fridays[index].innerHTML !== newFriday){
+                fridays[index].innerHTML = newFriday
+            } else {
+                fridays[index].innerHTML = fridayArray[index];
+            }
+        }
+    })
+}
+let decemberFridays = [4, 11, 18, 25];
+modifyFriday(decemberFridays);
