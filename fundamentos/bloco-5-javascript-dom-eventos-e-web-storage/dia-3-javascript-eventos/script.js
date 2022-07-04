@@ -128,3 +128,13 @@ function lupaOut(){
 }
 lupaOut();
 lupaOver();
+
+//7
+function newTask(tarefa){
+    let taskContainer = document.getElementsByClassName('my-tasks')[0];
+    let taskName = document.createElement('span');
+
+    taskName.innerHTML = tarefa;
+    taskContainer.appendChild(taskName);
+}
+newTask('estudar');
