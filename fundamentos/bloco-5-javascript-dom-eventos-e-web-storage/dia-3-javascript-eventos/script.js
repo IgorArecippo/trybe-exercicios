@@ -138,3 +138,14 @@ function newTask(tarefa){
     taskContainer.appendChild(taskName);
 }
 newTask('estudar');
+
+//8
+function newTaskDiv(color){
+    let newTaskContainer = document.querySelector('.my-tasks');
+    let newTaskName = document.createElement('div');
+
+    newTaskName.className = 'task';
+    newTaskName.style.backgroundColor = color;
+    newTaskContainer.appendChild(newTaskName);
+}
+newTaskDiv('lightgreen');
