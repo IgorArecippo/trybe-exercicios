@@ -57,7 +57,6 @@ function createHolidayButton(buttonName) {
 
     buttonContainer.appendChild(newButton);
 }
-
 createHolidayButton('Feriados');
 
 //3
@@ -164,3 +163,22 @@ function selectTask(){
     });
 }
 selectTask();
+
+//10
+function setDayColor(){
+    let selectedTask = document.getElementsByClassName('task selected');
+    let days = document.getElementById('days');
+    let taskDiv = document.querySelector('.task');
+    let taskColor = taskDiv.style.backgroundColor;
+
+    days.addEventListener('click', function(event){
+        let eventTargetColor = event.target.style.color;
+        if (selectedTask.length > 0 && eventTargetColor !== taskColor){
+            let color = selectedTask[0].style.backgroundColor;
+            event.target.style.color = color;
+        } else if (eventTargetColor === taskColor){
+            event.target.style.color = 'rgb(119,119,119)';
+        }
+    });
+}
+setDayColor();
