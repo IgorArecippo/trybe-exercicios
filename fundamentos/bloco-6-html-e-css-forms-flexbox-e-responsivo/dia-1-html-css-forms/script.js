@@ -5,8 +5,8 @@ function handleSubmit(event) {
 function clearFields(){
     const formElements = document.querySelectorAll('input');
     const textArea = document.querySelector('textarea');
-    for (i in formElements) {
-        const userInput = formElements[i]
+    for (indice in formElements) {
+        const userInput = formElements[indice]
         userInput.value = '';
         userInput.checked = false;
     }
