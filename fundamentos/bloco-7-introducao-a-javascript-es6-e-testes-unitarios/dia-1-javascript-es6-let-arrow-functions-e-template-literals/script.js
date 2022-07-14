@@ -1,3 +1,4 @@
+//PARTE 1
 //1
 const testingScope = (escopo) => {
      if (escopo === true) {
@@ -10,3 +11,11 @@ const testingScope = (escopo) => {
     }
 }
 testingScope(true);
+
+//2
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+const sortFunction = (a, b) => (a - b)
+oddsAndEvens.sort(sortFunction);
+
+console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`)
