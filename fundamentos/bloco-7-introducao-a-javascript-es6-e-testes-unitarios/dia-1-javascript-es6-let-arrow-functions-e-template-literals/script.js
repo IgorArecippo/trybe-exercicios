@@ -19,3 +19,18 @@ const sortFunction = (a, b) => (a - b)
 oddsAndEvens.sort(sortFunction);
 
 console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`)
+
+//PARTE 2
+//1
+//forma iterativa:
+const factorial = (number) => {
+    let result = 1
+    for (index = 2; index <= number; index += 1){
+        result *= index
+    }
+    return result;
+}
+console.log(factorial(7))
+//forma recursiva:
+const fatorial = (number) => number > 1 ? number * factorial(number - 1) : 1;
+console.log(fatorial(3))
