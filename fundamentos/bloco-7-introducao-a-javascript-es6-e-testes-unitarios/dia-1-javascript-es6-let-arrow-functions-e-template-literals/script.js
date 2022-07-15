@@ -49,3 +49,32 @@ const longestWord = (text) => {
     return result;
 }
 console.log(longestWord('o canalha tem a senha que te deixa fraquinha o canalha tem a senha q te deixa fraquinha'));
+
+//4.1
+const replaceX = (name) => {
+    const frase = 'Tryber x aqui!';
+    const fraseArray = frase.split(' ');
+    for (let index = 0; index < fraseArray.length; index += 1){
+        if (fraseArray[index] === 'x'){
+            fraseArray[index] = name;
+        }
+    }
+    return fraseArray.join(' ');
+};
+
+//4.2
+const newString = (func) => {
+    const skills = ['JavaScript', 'HTML', 'CSS'];
+    let result = `
+    ${func}
+    
+    Minhas três principais habilidades são:`;
+
+    skills.forEach((skill) =>{
+        result = `${result}
+        - ${skill}`;
+    });
+    return result;
+}
+
+console.log(newString(replaceX('Igor')));
