@@ -26,3 +26,29 @@ const lotteryResult = (myNumber, callback) => {
 };
 
 console.log(lotteryResult(2, numberChecker));
+
+//3
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const compareAnswers = (rightAnswer, studentAnswer) => {
+    if (studentAnswer === rightAnswer){
+        return 1;
+    }
+    if (studentAnswer === 'N.A') {
+        return 0;
+    }
+
+    return -0.5;
+}
+
+const countPoints = (rightAnswers, studentAnswers, action) => {
+    let counter = 0;
+    for (let index in rightAnswers) {
+        const actionReturn = action(rightAnswers[index], studentAnswers[index]);
+        counter += actionReturn;
+    }
+    return `Resultado final: ${counter} pontos.`
+};
+
+console.log(countPoints(RIGHT_ANSWERS, STUDENT_ANSWERS,     compareAnswers));
