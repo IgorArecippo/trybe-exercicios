@@ -94,7 +94,15 @@ function booksOrderedByReleaseYearDesc() {
 //5
 function everyoneWasBornOnSecXX() {
     return books.every((book) => {
-        book.author.birthYear > 1900 && book.author.birthYear <= 2000
+        book.author.birthYear > 1900 && book.author.birthYear <= 2000;
     });
 };
-console.log(everyoneWasBornOnSecXX());
+// console.log(everyoneWasBornOnSecXX());
+
+//6
+const expectedResult = true;
+
+function someBookWasReleaseOnThe80s() {
+  return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
+};
+console.log(someBookWasReleaseOnThe80s())
