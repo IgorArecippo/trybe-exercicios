@@ -77,4 +77,16 @@ function smallerName() {
     });
     return nameBook;
 }
-console.log(smallerName());
+// console.log(smallerName());
+
+//3
+function getNamedBook() {
+   return books.find((book) => book.name.length === 26);
+};
+// console.log(getNamedBook());
+
+//4
+function booksOrderedByReleaseYearDesc() {
+    return books.sort((bookA, BookB) => BookB.releaseYear - bookA.releaseYear);
+};
+console.log(booksOrderedByReleaseYearDesc());
