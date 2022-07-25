@@ -72,4 +72,8 @@ function nameAndAge(books) {
     age: book.releaseYear - book.author.birthYear
    })).sort((book1, book2) => book1.age - book2.age);
 };
-console.log(nameAndAge(books));
+// console.log(nameAndAge(books));
+
+//3
+const fantasyOrScienceFiction = (books) => books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+console.log(fantasyOrScienceFiction(books));
