@@ -105,14 +105,13 @@ function longestNamedBook(array) {
 };
 // console.log(longestNamedBook(books));
 
-//array do exercício 5:
+//5
 const names = [
     'Aanemarie', 'Adervandes', 'Akifusa',
     'Abegildo', 'Adicellia', 'Aladonata',
     'Abeladerco', 'Adieidy', 'Alarucha',
 ];
 
-//5
 function containsA() {
     return names.reduce((acc, curr) =>
        acc + curr.split('').reduce((acumulator, current) => {
@@ -120,4 +119,17 @@ function containsA() {
           return acumulator;
     }, 0), 0);
 };
-console.log(containsA());
+// console.log(containsA());
+
+//6
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+
+function studentAverage() {
+  const nameAndAverage = students.map((student, index) => ({
+    name: student,
+    average: (grades[index].reduce((acc, curr) => acc + curr, 0) / grades[index].length),
+  }));
+  return nameAndAverage
+};
+console.log(studentAverage())
