@@ -81,4 +81,15 @@ const reduceNames = (array) =>  {
    }, '');
    return names.trim()
 };
-console.log(reduceNames(books));
+// console.log(reduceNames(books));
+//pq precisou colocar o `${acc}`
+
+//3
+function averageAge() {
+    const numberOfAuthors = books.length;
+    const sumOfAges = books.reduce((sum, age) => (
+        sum + (age.releaseYear - age.author.birthYear)
+    ), 0);
+    return sumOfAges / numberOfAuthors;
+};
+console.log(averageAge())
