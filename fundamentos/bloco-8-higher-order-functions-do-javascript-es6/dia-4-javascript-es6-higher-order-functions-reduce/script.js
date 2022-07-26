@@ -10,6 +10,7 @@ function flatten(array) {
 };
 // console.log(flatten(arrays));
 
+//array dos exercícios 2, 3 e 4:
 const books = [
     {
       id: 1,
@@ -102,4 +103,21 @@ function longestNamedBook(array) {
         return currentBook;
     });
 };
-console.log(longestNamedBook(books));
+// console.log(longestNamedBook(books));
+
+//array do exercício 5:
+const names = [
+    'Aanemarie', 'Adervandes', 'Akifusa',
+    'Abegildo', 'Adicellia', 'Aladonata',
+    'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+//5
+function containsA() {
+    return names.reduce((acc, curr) =>
+       acc + curr.split('').reduce((acumulator, current) => {
+          if (current === 'a' || current === 'A') return acumulator + 1;
+          return acumulator;
+    }, 0), 0);
+};
+console.log(containsA());
